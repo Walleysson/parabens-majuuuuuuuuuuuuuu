@@ -122,7 +122,7 @@ const HeroSection = () => {
                   >
                     <Music className="text-primary mb-4" size={60} />
                   </motion.div>
-                  <img src= alt="Logo" />
+          
 
                 </div>
               </motion.div>
