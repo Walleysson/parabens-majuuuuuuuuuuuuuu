@@ -38,27 +38,27 @@ export const birthdayConfig = {
   // Fotos da galeria - adicione suas fotos na pasta public/photos/
   photos: [
     {
-      filename: "foto1.jpg", // <- Nome do arquivo em public/photos/
+      filename: "foto1.jpeg", // <- Nome do arquivo em public/photos/
       caption: "Titulo",
       date: "2025",
     },
     {
-      filename: "foto2.jpg",
+      filename: "foto2.jpeg",
       caption: "Titulo",
       date: "2025",
     },
     {
-      filename: "foto3.jpg",
+      filename: "foto3.jpeg",
       caption: "Titul",
       date: "2025",
     },
     {
-      filename: "foto4.jpg",
+      filename: "foto4.jpeg",
       caption: "Celebrando a vida",
       date: "2025",
     },
     {
-      filename: "foto5.jpg",
+      filename: "foto5.jpeg",
       caption: "Titulo",
       date: "2025",
     },
