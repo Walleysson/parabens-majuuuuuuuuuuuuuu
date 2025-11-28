@@ -15,7 +15,7 @@ const MusicPlayer = () => {
   useEffect(() => {
     // Inicia a música automaticamente com volume reduzido
     if (audioRef.current) {
-      audioRef.current.volume = 0.3;
+      audioRef.current.volume = 0.4;
       audioRef.current.play().then(() => setIsPlaying(true)).catch(err => console.log("Autoplay bloqueado:", err));
     }
   }, []);
@@ -133,10 +133,10 @@ const MusicPlayer = () => {
               {/* Título */}
               <div className="text-center pr-6">
                 <p className="text-sm font-bold text-gradient-magic">
-                  Sabrina Carpenter
+                  Parabéns
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Short n' Sweet 💖
+                  
                 </p>
               </div>
 
