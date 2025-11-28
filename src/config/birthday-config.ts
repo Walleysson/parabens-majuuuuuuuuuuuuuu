@@ -1,3 +1,4 @@
+
 // Configuração personalizada do site de aniversário
 // Edite este arquivo para personalizar o nome e as mensagens
 
