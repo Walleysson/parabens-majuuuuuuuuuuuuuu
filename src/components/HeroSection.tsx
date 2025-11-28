@@ -122,12 +122,8 @@ const HeroSection = () => {
                   >
                     <Music className="text-primary mb-4" size={60} />
                   </motion.div>
-                  <p className="text-2xl md:text-3xl font-bold text-gradient-magic mb-2">
-                    Short n' Sweet
-                  </p>
-                  <p className="text-lg text-muted-foreground italic">
-                    "Life is short & sweet"
-                  </p>
+                  <img src= alt="Logo" />
+
                 </div>
               </motion.div>
               
