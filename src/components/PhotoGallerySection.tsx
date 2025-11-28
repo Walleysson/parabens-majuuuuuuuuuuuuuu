@@ -91,7 +91,7 @@ const PhotoGallerySection = () => {
             <Camera className="text-primary mx-auto" size={48} />
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Você é universo de coisas boas
+            Você é um universo de coisas boas
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             O mundo é mais mágico com sua existencia
