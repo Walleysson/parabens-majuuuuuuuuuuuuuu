@@ -18,11 +18,11 @@ export const birthdayConfig = {
         text: "Que o amor te acompanhe em cada passo e que você sempre se sinta querida e especial!",
       },
       {
-        title: "Sucesso Radiante ",
+        title: "Você arrasa",
         text: "Que todos os seus sonhos se realizem e que você alcance tudo o que deseja na vida!",
       },
       {
-        title: "Momentos Mágicos ",
+        title: "Gratidão por existir",
         text: "Que cada dia seja repleto de alegria, risadas e momentos inesquecíveis!",
       },
     ],
@@ -30,16 +30,9 @@ export const birthdayConfig = {
     portal: {
       title: "Feliz Aniversário!",
       paragraphs: [
-        "Você é absolutamente mágica e merece toda a felicidade do mundo!",
-        "Que este dia especial seja cheio de amor, risadas e momentos inesquecíveis.",
-        "Continue brilhando forte e sendo essa pessoa incrível que você é! ",
+        " Feliz vida!!!",
       ],
-      quotes: [
-        "A vida é 'short n' sweet', então aproveite cada momento! 💕",
-        "I'm working late, 'cause I'm a singer 🎤✨",
-      ],
-    },
-  },
+  
 
   // Fotos da galeria - adicione suas fotos na pasta public/photos/
   photos: [
