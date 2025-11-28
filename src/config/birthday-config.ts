@@ -3,7 +3,7 @@
 
 export const birthdayConfig = {
   // Nome do aniversariante
-  name: "Esqueci o nome", // <- ALTERE AQUI para o nome real
+  name: "Maju", // <- ALTERE AQUI para o nome real
   
   // Mensagens personalizadas
   messages: {
