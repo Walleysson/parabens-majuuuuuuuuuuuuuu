@@ -1,3 +1,4 @@
+
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X, Camera, Sparkles } from "lucide-react";
 import { useState } from "react";
@@ -90,10 +91,10 @@ const PhotoGallerySection = () => {
             <Camera className="text-primary mx-auto" size={48} />
           </motion.div>
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-            Memórias Especiais 
+            Você é universo de coisas boas
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Momentos que guardamos no coração para sempre
+            O mundo é mais mágico com sua existencia
           </p>
         </motion.div>
 
