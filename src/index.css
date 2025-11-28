@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 330 15% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 15% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 15% 25%;
+
+    /* Sabrina Carpenter inspired palette */
+    --primary: 340 82% 75%; /* rosa pastel vibrante */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 280 50% 85%; /* lilás suave */
+    --secondary-foreground: 330 15% 25%;
+
+    --accent: 45 100% 70%; /* dourado suave */
+    --accent-foreground: 330 15% 25%;
+
+    --muted: 340 100% 97%;
+    --muted-foreground: 330 15% 55%;
+
+    --pearl: 0 0% 98%; /* branco perolado */
+    --pink-pastel: 340 82% 75%;
+    --lilac: 280 50% 85%;
+    --gold: 45 100% 70%;
+    --rose-glow: 340 100% 85%;
+
+    /* Gradientes mágicos */
+    --gradient-magic: linear-gradient(135deg, hsl(340 82% 75%), hsl(280 50% 85%), hsl(45 100% 70%));
+    --gradient-portal: linear-gradient(180deg, hsl(340 82% 75%), hsl(280 50% 85%));
+    --gradient-sweet: linear-gradient(135deg, hsl(340 100% 97%), hsl(280 100% 97%));
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 50% 90%;
+    --input: 340 50% 90%;
+    --ring: 340 82% 75%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient-magic {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-magic);
+  }
+
+  .text-gradient-portal {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-portal);
+  }
+
+  .bg-gradient-magic {
+    background-image: var(--gradient-magic);
+  }
+
+  .bg-gradient-portal {
+    background-image: var(--gradient-portal);
+  }
+
+  .bg-gradient-sweet {
+    background-image: var(--gradient-sweet);
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-lg bg-white/30 border border-white/50;
+  }
+
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    animation: shimmer 3s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 1.5s ease-in-out infinite;
+  }
+}
